@@ -30,7 +30,7 @@ class _LoadingPageState extends State<LoadingPage> {
         child: SizedBox(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          child: Image.asset('assets/images/isprinkle.png',
+          child: Image.asset('assets/images/smart-water-tela.png',
           fit: BoxFit.cover
           ),
         ),

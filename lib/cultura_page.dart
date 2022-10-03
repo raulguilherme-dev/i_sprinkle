@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:i_sprinkle/constantes.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 class CulturaPage extends StatefulWidget {
@@ -9,6 +10,8 @@ class CulturaPage extends StatefulWidget {
 }
 
 class _CulturaPageState extends State<CulturaPage> {
+
+  bool state = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,11 +48,11 @@ class _CulturaPageState extends State<CulturaPage> {
                         ElevatedButton.styleFrom(
                           shape: const StadiumBorder(),
                           fixedSize: const Size(120, 20),
-                          primary: const Color(0xffEBEBEB)
+                          primary: constantes.cinzaClaro
                       ), 
                       child: const Text('Ligar Todos', 
                         style: TextStyle(
-                          color: Color(0xff696969),
+                          color: constantes.cinzaEscuro,
                           fontSize: 11,
                         ),
                       ),
@@ -65,7 +68,7 @@ class _CulturaPageState extends State<CulturaPage> {
                   radius: 300,
                   lineWidth: 30,
                   percent: 0.7,
-                  progressColor: Color(0xff5C91CE),
+                  progressColor: constantes.azul,
                   circularStrokeCap: CircularStrokeCap.round,
                   center: SizedBox(
                     width: 200,
@@ -100,7 +103,7 @@ class _CulturaPageState extends State<CulturaPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 25,
-                          color: Color(0xff5C91CE)
+                          color: constantes.azul
                         ),
                       ),
                       ],
@@ -115,7 +118,7 @@ class _CulturaPageState extends State<CulturaPage> {
                 ),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Color(0xffEBEBEB),
+                    primary: constantes.cinzaClaro,
                     fixedSize: Size(200, 40),
                     shape: const StadiumBorder(),
                   ),
@@ -133,15 +136,15 @@ class _CulturaPageState extends State<CulturaPage> {
                 decoration: BoxDecoration(
                   border: Border.all(
                     width: 1,
-                    color: Color(0xffEBEBEB)
+                    color: constantes.cinzaClaro
                   ),
                   borderRadius: BorderRadius.circular(5),
                 ),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Padding(
+                  children: [
+                    const Padding(
                       padding: EdgeInsets.only(
                         left: 10,
                         right: 10
@@ -152,6 +155,13 @@ class _CulturaPageState extends State<CulturaPage> {
                         ),
                       ),
                     ),
+                    Switch(
+                      value: state, 
+                      onChanged: (bool s){
+                        setState(() {
+                          state = s;
+                        });
+                    })
                   ],
                 ),
               ),

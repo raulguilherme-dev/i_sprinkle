@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:i_sprinkle/constantes.dart';
 import 'package:i_sprinkle/home_page.dart';
 
 class DispositivosPage extends StatefulWidget {
@@ -11,6 +12,8 @@ class DispositivosPage extends StatefulWidget {
 }
 
 class _DispositivosPageState extends State<DispositivosPage> {
+
+  bool state = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +48,7 @@ class _DispositivosPageState extends State<DispositivosPage> {
                   ),
                   child: Text('Arroz',
                     style: TextStyle(
-                      color: Color(0xff5C91CE),
+                      color: constantes.azul,
                       fontSize: 16
                     ),
                   ),
@@ -60,7 +63,7 @@ class _DispositivosPageState extends State<DispositivosPage> {
                     decoration: BoxDecoration(
                       border: Border.all(
                         width: 1,
-                        color: Color(0xffEBEBEB)
+                        color: constantes.cinzaClaro
                       ),
                       borderRadius: BorderRadius.circular(5),
                     ),
@@ -79,6 +82,13 @@ class _DispositivosPageState extends State<DispositivosPage> {
                             ),
                           ),
                         ),
+                        Switch(
+                          value: state, 
+                          onChanged: (bool s){
+                            setState(() {
+                              state = s;
+                            });
+                        })
                       ],
                     ),
                   ),

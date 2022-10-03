@@ -60,7 +60,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/isprinkle.png
+    - assets/images/smart-water-tela.png
     - assets/images/logo.png
     - assets/images/co2-icon.png
     - assets/images/intesidade-solar-icon.png

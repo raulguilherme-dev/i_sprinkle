@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:i_sprinkle/constantes.dart';
+
+import 'login_page.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -31,7 +34,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       border: Border.all(
-                        color: const Color(0xff5C91CE),
+                        color: constantes.azul,
                         width: 2
                       ),
                       image: const DecorationImage(
@@ -66,7 +69,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     decoration: BoxDecoration(
                       border: Border.all(
                         width: 1,
-                        color: Color(0xffEBEBEB)
+                        color: constantes.cinzaClaro
                       ),
                       borderRadius: BorderRadius.circular(5),
                     ),
@@ -103,7 +106,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     decoration: BoxDecoration(
                       border: Border.all(
                         width: 1,
-                        color: Color(0xffEBEBEB)
+                        color: constantes.cinzaClaro
                       ),
                       borderRadius: BorderRadius.circular(5),
                     ),
@@ -123,7 +126,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           ),
                         ),
                         const Icon(Icons.arrow_forward_ios_rounded,
-                          color: Color(0xff696969),
+                          color: constantes.cinzaEscuro,
                         )
                       ],
                     ),
@@ -139,17 +142,26 @@ class _ProfilePageState extends State<ProfilePage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5)
                     ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text('Sair',
-                          style: TextStyle(
-                            color: Colors.red,
-                            fontSize: 18
-                          ),
-                        )
-                      ],
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) {
+                          return const LoginPage();
+                        }),);
+                      },
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('Sair',
+                            style: TextStyle(
+                              color: Colors.red,
+                              fontSize: 18
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 )

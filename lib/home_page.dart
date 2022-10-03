@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:i_sprinkle/cultura_page.dart';
+import 'package:i_sprinkle/constantes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -35,7 +36,7 @@ class _HomePageState extends State<HomePage> {
                   child: Center(
                     child: Text('Smart Water',
                       style: TextStyle(
-                        color: Color(0xff5C91CE),
+                        color: constantes.azul,
                       ),
                     ),
                   ),
@@ -58,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                       Text('Ver mais',
                         style: TextStyle(
                           fontSize: 12,
-                          color: Color(0xff5C91CE),
+                          color: constantes.azul,
                         ),
                       ),
                     ],
@@ -103,12 +104,12 @@ class _HomePageState extends State<HomePage> {
                                 const Text('54.12 kB',
                                 style: TextStyle(
                                   fontSize: 18,
-                                  color: Color(0xffEBEBEB)
+                                  color: constantes.cinzaClaro
                                 ),),
                                 const Text('Intensidade Solar',
                                 style: TextStyle(
                                   fontSize: 10,
-                                  color: Color(0xffEBEBEB)
+                                  color: constantes.cinzaClaro
                                 ),),
                               ],
                             ),
@@ -123,12 +124,12 @@ class _HomePageState extends State<HomePage> {
                                 const Text('26 M³',
                                 style: TextStyle(
                                   fontSize: 18,
-                                  color: Color(0xffEBEBEB)
+                                  color: constantes.cinzaClaro
                                 ),),
                                 const Text('Umidade do Ar',
                                 style: TextStyle(
                                   fontSize: 10,
-                                  color: Color(0xffEBEBEB)
+                                  color: constantes.cinzaClaro
                                 ),),
                               ],
                             ),
@@ -143,12 +144,12 @@ class _HomePageState extends State<HomePage> {
                                 const Text('900 Mд',
                                 style: TextStyle(
                                   fontSize: 18,
-                                  color: Color(0xffEBEBEB)
+                                  color: constantes.cinzaClaro
                                 ),),
                                 const Text('Emissão de CO²',
                                 style: TextStyle(
                                   fontSize: 10,
-                                  color: Color(0xffEBEBEB)
+                                  color: constantes.cinzaClaro
                                 ),),
                               ],
                             ),
@@ -176,7 +177,7 @@ class _HomePageState extends State<HomePage> {
                       Text('Ver todas',
                         style: TextStyle(
                           fontSize: 12,
-                          color: Color(0xff5C91CE),
+                          color: constantes.azul,
                         ),
                       ),
                     ],
@@ -236,8 +237,8 @@ class _HomePageState extends State<HomePage> {
                                       gradient: LinearGradient(
                                         begin: AlignmentDirectional.bottomEnd,
                                         colors: [
-                                          const Color(0xff5C91CE),
-                                          const Color(0xffFFFFFF).withOpacity(0.0),
+                                          constantes.azul,
+                                          Colors.white.withOpacity(0.0),
                                         ]
                                       )
                                     ),
@@ -292,7 +293,7 @@ class _HomePageState extends State<HomePage> {
                             Container(
                               height: 100,
                               width: 100,
-                              color: Color(0xff5C91CE)
+                              color: constantes.azul
                             ),
                             Container(
                               height: 65,

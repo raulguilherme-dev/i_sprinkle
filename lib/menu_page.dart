@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:i_sprinkle/config_page.dart';
+import 'package:i_sprinkle/constantes.dart';
 import 'package:i_sprinkle/dispositivos_page.dart';
 import 'package:i_sprinkle/home_page.dart';
 import 'package:i_sprinkle/profile_page.dart';
@@ -43,8 +44,8 @@ class _MenuPageState extends State<MenuPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: paginaAtual,
-        selectedItemColor: const Color(0xff5C91CE),
-        unselectedItemColor: const Color(0xff696969),
+        selectedItemColor: constantes.azul,
+        unselectedItemColor: constantes.cinzaEscuro,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Inicio"),
           BottomNavigationBarItem(icon: Icon(Icons.monitor), label: "Dispositivos"),

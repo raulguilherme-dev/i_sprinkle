@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:i_sprinkle/constantes.dart';
 import 'package:i_sprinkle/menu_page.dart';
+
+import 'cadastro_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -9,11 +12,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-
-  Color cor1 = const Color(0xff5191CE);
-  Color cor2 = const Color(0xffEBEBEB);
-  Color cor3 = const Color(0xff696969);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -120,7 +118,7 @@ class _LoginPageState extends State<LoginPage> {
                       textAlign: TextAlign.right,
                       style: TextStyle(
                         fontFamily: 'RobotoCondensed',
-                        color: Color(0xff5191CE),
+                        color: constantes.azul,
                       ),
                     ),
                   ),
@@ -144,13 +142,13 @@ class _LoginPageState extends State<LoginPage> {
                     style: ElevatedButton.styleFrom(
                       shape: const StadiumBorder(),
                       fixedSize: const Size(double.maxFinite, 60),
-                      primary: const Color(0xff5191CE)
+                      primary: constantes.azul
                     ),
                     child: const Text("Entrar",
                     style: TextStyle(
                       fontFamily: 'RobotoCondensed',
                       fontSize: 22,
-                      color: Color(0xffEBEBEB)
+                      color: constantes.cinzaClaro
                       )
                     ),
                   ),
@@ -161,14 +159,25 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   child: Text("Ainda não possui conta?",
                     style: TextStyle(
-                      color: Color(0xff696969)
+                      color: constantes.cinzaEscuro
                     ),
                   ),
                 ),
-                const Text("Cadastre-se aqui",
-                  style: TextStyle(
-                    color: Color(0xff5191CE),
-                    decoration: TextDecoration.underline
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) {
+                        return const CadastroPage();
+                      }
+                    ),);
+                  },
+                  child: const Text("Cadastre-se aqui",
+                    style: TextStyle(
+                      color: constantes.azul,
+                      decoration: TextDecoration.underline
+                      
+                    ),
                   ),
                 ),
               ],),
