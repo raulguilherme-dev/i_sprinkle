@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.i_sprinkle">
+    package="com.i_sprinkle">
    <application
         android:label="i_sprinkle"
         android:name="${applicationName}"

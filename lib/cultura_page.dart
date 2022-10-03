@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:i_sprinkle/constantes.dart';
+import 'constantes.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 
 class CulturaPage extends StatefulWidget {

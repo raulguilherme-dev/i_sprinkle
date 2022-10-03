@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:i_sprinkle/login_page.dart';
+import 'login_page.dart';
 import 'menu_page.dart';
 import 'constantes.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:i_sprinkle/cultura_page.dart';
-import 'package:i_sprinkle/constantes.dart';
+import 'cultura_page.dart';
+import 'constantes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

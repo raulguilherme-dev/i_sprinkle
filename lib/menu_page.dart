@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:i_sprinkle/config_page.dart';
-import 'package:i_sprinkle/constantes.dart';
-import 'package:i_sprinkle/dispositivos_page.dart';
-import 'package:i_sprinkle/home_page.dart';
-import 'package:i_sprinkle/profile_page.dart';
+import 'config_page.dart';
+import 'constantes.dart';
+import 'dispositivos_page.dart';
+import 'home_page.dart';
+import 'profile_page.dart';
 
 class MenuPage extends StatefulWidget {
   const MenuPage({Key? key}) : super(key: key);

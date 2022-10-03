@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:i_sprinkle/constantes.dart';
-import 'package:i_sprinkle/menu_page.dart';
+import 'constantes.dart';
+import 'menu_page.dart';
 
 import 'cadastro_page.dart';
 

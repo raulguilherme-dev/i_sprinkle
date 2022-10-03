@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:i_sprinkle/constantes.dart';
-import 'package:i_sprinkle/home_page.dart';
+import 'constantes.dart';
+import 'home_page.dart';
 
 class DispositivosPage extends StatefulWidget {
   const DispositivosPage({Key? key}) : super(key: key);
